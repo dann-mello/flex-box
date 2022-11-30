@@ -358,34 +358,128 @@ footer .widget_title_text {
     text-decoration: none;
 }
 
-.widget-redes{
+.widget-redes {
     display: flex;
 }
-.widget-icons{
-    margin-top:30px;
-    margin-bottom:20px;
+
+.widget-icons {
+    margin-top: 30px;
+    margin-bottom: 20px;
     margin-right: 7px;
     filter: grayscale(1);
 }
 
-.widget-icons img{
+.widget-icons img {
     border-radius: 2px;
     cursor: pointer;
 }
 
-.principal-info{
+.principal-info {
     font-size: 13px;
     color: #fff;
     line-height: 20px;
     margin-bottom: 5px;
 }
 
-.second-info{
+.second-info {
     font-size: 12px;
     color: #36a9e1;
     margin-bottom: 15px;
 }
 
-.grayscale{
+.grayscale {
     color: #5c5c5c;
+}
+
+.line {
+    background-color: #36a9e1;
+    width: 42px;
+    height: 3px;
+    margin-bottom: 11px;
+    display: none;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1000px) {
+    .container {
+        width: 850px;
+    }
+}
+
+@media (max-width: 890px) {
+    .banner_headline {
+        padding: 20px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section {
+        padding: 20px;
+    }
+
+    .widget_body-bc-blue {
+        justify-content: space-around;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 160px;
+        background-color: #fff;
+        width: 100%;
+    }
+
+
+    .line {
+        display: block;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .footer-menu,
+    .footer-area {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        padding: 20px;
+    }
+
+    .footer-copy {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    #geral section {
+        padding: 10px;
+    }
 }
